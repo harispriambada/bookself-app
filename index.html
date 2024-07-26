@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-konten">
+      <h1>BookSelf APP</h1>
+      <p>Buat Bukumu menjadi tertata dan terorganisir (:</p>
+    </header>
+    <main>
+      <div class="konten-satu">
+        <section class="input-buku">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="inputBuku">
+            <div class="input">
+              <label for="inputJudul">Judul</label>
+              <input id="inputJudul" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputPenulis">Penulis</label>
+              <input id="inputPenulis" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputTahun">Tahun</label>
+              <input id="inputTahun" type="number" required />
+            </div>
+            <div class="submitan">
+              <div>
+                <label for="checkboxBtn" class="labelin"
+                  >Sudah Selesai Dibaca?</label
+                >
+                <input type="checkbox" class="checkbox" id="checkboxBtn" />
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                name="Submit"
+                class="btn-form"
+                id="submitBuku"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="konten-dua">
+        <section>
+          <input type="text" id="searchBar" placeholder="search Disini" />
+        </section>
+        <section class="rak-buku">
+          <h2>Belum selesai dibaca</h2>
+          <div id="listBelumSelesaiBaca" class="container-list"></div>
+        </section>
+
+        <section class="rak-buku">
+          <h2>Selesai dibaca</h2>
+          <div id="listSelesaiBaca" class="container-list"></div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

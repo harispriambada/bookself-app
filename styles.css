@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7752fe;
+  margin: 5px 10%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.header-konten {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  height: 100px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.header-konten h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #190482;
+}
+.header-konten p {
+  color: #190482;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+.konten-satu,
+.konten-dua {
+  background-color: #fff;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 20px;
+}
+.konten-satu {
+  width: 30%;
+  /* height: 300px; */
+}
+.konten-dua {
+  width: 67%;
+}
+.input-buku {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.input-buku h2 {
+  color: #190482;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.input {
+  margin: 5px;
+}
+
+.input-buku > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border-color: #7752fe;
+  box-shadow: 2px 2px 2px #7752fe;
+}
+.input-buku > form > .input > label {
+  color: #190482;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* .checkbox {
+  margin: 10px;
+  color: #190482;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+} */
+form .btn-form {
+  background-color: #7752fe;
+  padding: 8px;
+  border-radius: 10px;
+  border-color: #7752fe;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin: 5px;
+}
+.pencarian {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.pencarian h2 {
+  color: #190482;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.cari {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cari input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border-color: #7752fe;
+  box-shadow: 2px 2px 2px #7752fe;
+}
+.cari label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #190482;
+}
+.cari button {
+  width: 30%;
+  background-color: #7752fe;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #7752fe;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+}
+.rak-buku {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 8px;
+  border-color: #7752fe;
+  border: 2px solid #7752fe;
+  margin: 20px 20px;
+  width: 100wh;
+  padding: 10px;
+}
+.rak-buku > h2 {
+  color: #190482;
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.list-buku {
+  border: 1px solid #190482;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list-buku p {
+  padding: 10px 5px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #190482;
+}
+.action {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  gap: 40px;
+}
+
+/* .rak-buku > .list-buku {
+  padding: 16px;
+}
+.item-buku {
+  padding: 5px;
+  border: 1px solid #190482;
+  width: 300px;
+}
+.item-buku h3 {
+  text-align: center;
+  color: #190482;
+}
+
+.rak-buku > .list-buku > .item-buku {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.rak-buku > .list-buku > .item-buku > h3,
+p {
+  margin: 8px 0;
+} */
+.delete {
+  /* border: 2px solid black;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px; */
+  cursor: pointer;
+  background-image: url(asets/trash-solid.svg);
+  height: 25px;
+  width: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+.undone {
+  cursor: pointer;
+  background-image: url(asets/arrow-rotate-left-solid.svg);
+  height: 25px;
+  width: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+.undone:hover,
+.done:hover,
+.delete:hover {
+  transform: scale(1.2);
+}
+.done {
+  cursor: pointer;
+  background-image: url(asets/circle-check-regular.svg);
+  height: 25px;
+  width: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.input input:focus {
+  outline: none;
+}
+.submitan {
+  display: flex;
+  flex-direction: column;
+}
+.labelin {
+  color: #7752fe;
+  font-size: 1rem;
+  padding: 8px;
+}
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  accent-color: #190482;
+}
+
+.hide {
+  display: none;
+}
+
+/* .rak-buku > .list-buku > .item-buku > .action > button {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rak-buku > .list-buku > .item-buku > .action > .done {
+  background-color: darkgreen;
+  color: white;
+}
+
+.rak-buku > .list-buku > .item-buku > .action > .delete {
+  background-color: darkred;
+  color: white;
+} */
